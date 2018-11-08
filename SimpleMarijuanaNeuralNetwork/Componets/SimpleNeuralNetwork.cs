@@ -22,7 +22,7 @@ namespace SimpleMarijuanaNeuralNetwork.Componets
         /// <param name="numberOfInputNeurons">
         /// Number of neurons in input layer.
         /// </param>
-        public SimpleNeuralNetwork(int numberOfInputNeurons)
+        public SimpleNeuralNetwork(int numberOfInputNeurons,double learningRate = 2.95)
         {
             _layers = new List<NeuralLayer>();
             _layerFactory = new NeuralLayerFactory();
@@ -30,7 +30,7 @@ namespace SimpleMarijuanaNeuralNetwork.Componets
             // Create input layer that will collect inputs.
             CreateInputLayer(numberOfInputNeurons);
 
-            _learningRate = 2.95;
+            _learningRate = learningRate;
         }
 
         /// <summary>

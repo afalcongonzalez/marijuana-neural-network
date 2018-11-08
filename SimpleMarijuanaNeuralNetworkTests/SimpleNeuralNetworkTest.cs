@@ -82,6 +82,7 @@ namespace SimpleMarijuanaNeuralNetworkTests
 
             network.PushInputValues(new double[] { 1054, 54, 1 });
             var outputs = network.GetOutput();
+            Console.WriteLine($"output: {outputs[0]}");
         }
     }
 }
